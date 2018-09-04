@@ -1,0 +1,53 @@
+body{
+    background-image: url(../img/FONDOS/16.jpg);
+    height: 50vh;
+    background-position: top center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+
+ul.tabs{
+    margin-top: 20px;
+    text-align: center;
+}
+.card-image img{
+    max-width: 100%;
+    filter: gray;
+    -webkit-filter: grayscale(1);
+    -webkit-transition: all .5s ease-in-out;
+  
+}
+.card-image:hover img{
+    -webkit-filter: grayscale(0);
+    -webkit-transform: scale(1.1);
+    box-shadow: -1px 0px 10px 5px #c51162;
+}
+.card-image:hover img.al{
+    -webkit-filter: grayscale(0);
+    -webkit-transform: scale(1.15);
+}
+
+div.tam{
+    width: 220px;
+}
+div.tam img{
+    width: 100%;
+    height: 290px;;
+}
+
+.tabs li:hover a i.material-icons{
+    font-size: 40px;
+    color: #f0d90d!important;
+}
+ul li:hover a.white-text{
+    color:#f0d90d!important;
+
+}
+
+div.padd{
+    margin-top: 200px;
+}
+
+

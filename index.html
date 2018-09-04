@@ -9,6 +9,7 @@
     Import materialize.css -->
     <link type="text/css" rel="stylesheet" href="Public/css/materialize-icons.css"  media="screen,projection"/>
     <link type="text/css" rel="stylesheet" href="Public/css/materialize.min.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="Public/css/animate.css"  media="screen,projection"/>
     <link rel="stylesheet" href="Public/css/estilos.css">
     <link rel="stylesheet" href="Public/css/all.min.css">
     <style>
@@ -24,11 +25,19 @@
      blockquote img{
          height:320px!important;
      }
-     .thanks{
-         position: relative;
-         top:200;
-         left:50;
+     .delay1{
+         animation-delay: 4s;
+         animation-duration: 1.9s;
      }
+     .delay2{
+         animation-delay: 5s;
+         animation-duration: 1.9s;
+        }
+        .delay3{
+         animation-delay: 6s;
+         animation-duration: 1.9s;
+        }
+   
     </style>
     <script src="Public/js/jquery-3.2.1.min.js"></script>
     <script src="Public/js/materialize.min.js"></script>
@@ -37,33 +46,35 @@
         $('.scrollspy').scrollSpy();
     });</script>
 
-    <title>Materialize</title>
+    <title>Society</title>
 </head>
 <body>
     <div class="white" style="height: 350vh; opacity: .8;">
        
-        <h1 class="center hoverable z-depth-2 purple lighten-2" style="opacity: .9; margin-top:0px;">SOCIETY IN THE U.S</h1>
-        <ul class="tabs">
+        <h1 class="animated fadeInDown delay1 center hoverable z-depth-2 purple lighten-2" style="opacity: .9; margin-top:0px;">SOCIETY IN THE U.S</h1>
+        <ul class="tabs animated fadeInUp delay2">
             <li class="tab col l3"><a href="#contenido1">Objective</a></li>
             <li class="tab col l3"><a href="#contenido2">College</a></li>
             <li class="tab col l3"><a href="#contenido3">Making friends</a></li>
             <li class="tab col l3"><a href="#contenido4">Closure</a></li>
         </ul>
         <div class="container">
-        <div class="thanks">
-            <h4>Thanks for your attention..</h4>
-        </div>
-            <div class="row">
+        
+            <div class="row animated fadeInRight delay3">
                 <div id="contenido1">
                     <h4>Objective</h4>
                     <blockquote class="col l4">
                        <img src="Public/img/1.jpg" alt="" class="responsive-img circle">
+                       <h5>Get involve</h5>
+                     
                     </blockquote>
                     <blockquote class="col l4">
                        <img src="Public/img/2.jpg" alt="" class="responsive-img circle">
+                       <h5>The main diferences</h5>
                     </blockquote>
                     <blockquote class="col l4">
                        <img src="Public/img/3.jpg" alt="" class="responsive-img circle">
+                       <h5>Some advice</h5>
                     </blockquote>
                    
                 </div>
@@ -71,12 +82,17 @@
                     <h4>College</h4>
                     <blockquote class="col l4">
                        <img src="Public/img/4.jpg" alt="" class="responsive-img circle">
+                       <h5>Too expensive</h5>
+                      
                     </blockquote>
                     <blockquote class="col l4">
                        <img src="Public/img/13.jpg" alt="" class="responsive-img circle">
+                       <h5>18 to 22</h5>
+                      
                     </blockquote>
                     <blockquote class="col l4">
                        <img src="Public/img/6.jpg" alt="" class="responsive-img circle">
+                       <h5>Get job and move on</h5>
                     </blockquote>
                    
                 </div>
@@ -84,21 +100,26 @@
                     <h4>Making Friends</h4>
                     <blockquote class="col l4">
                        <img src="Public/img/7.png" alt="" class="responsive-img circle">
+                       <h5>Be patient and polite</h5>
                     </blockquote>
                     <blockquote class="col l4">
                        <img src="Public/img/8.jpg" alt="" class="responsive-img circle">
+                       <h5>Follow some club</h5>
                     </blockquote>
                     <blockquote class="col l4">
                        <img src="Public/img/9.jpg" alt="" class="responsive-img circle">
+                       <h5>Use compliments</h5>
                     </blockquote>
                 </div>
                 <div id="contenido4">
                     <h4>Closure</h4>
                     <blockquote class="col l6">
                        <img src="Public/img/10.jpg" alt="" class="responsive-img circle">
+                       <h5>You're gonna get along with everybody rapdly</h5>
                     </blockquote>
                     <blockquote class="col l6">
                        <img src="Public/img/11.jpg" alt="" class="responsive-img circle">
+                       <h5>Just go along with the flow</h5>
                     </blockquote>
                    
                 </div>

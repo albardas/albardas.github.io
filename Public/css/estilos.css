@@ -1,5 +1,5 @@
 body{
-    background-image: url(../img/FONDOS/16.jpg);
+    background-image: url(../img/FONDOS/1.jpg);
     height: 50vh;
     background-position: top center;
     background-size: cover;
@@ -30,7 +30,7 @@ ul.tabs{
 }
 
 div.tam{
-    width: 220px;
+    /* width: 240px; */
 }
 div.tam img{
     width: 100%;
@@ -48,6 +48,20 @@ ul li:hover a.white-text{
 
 div.padd{
     margin-top: 200px;
+}
+p{
+    font-size: 18px;
+}
+.collapsible-body{
+    font-size: 22px;
+    color: black;
+}
+.card-image{
+    height: 400px;
+}
+.card-image img{
+    width: 100%;
+    height: 100%;
 }
 
 

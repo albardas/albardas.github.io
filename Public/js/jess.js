@@ -32,3 +32,22 @@ $(document).on('click', '#mostrarimagen2', function () {
 $(document).on('click', '#mostrarimagen3', function () {
     Materialize.fadeInImage('.imagen3');
 });
+
+
+$(document).ready(function(){
+    $('.collapsible').collapsible();
+  });
+       
+
+
+  $(document).ready(function(){
+    $('input.autocomplete').autocomplete({
+      data: {
+        "thought": 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Thought_bubble.svg/220px-Thought_bubble.svg.png',
+        "unfortunately": 'https://i.ytimg.com/vi/75eF1htaXhg/maxresdefault.jpg',
+        "unconscious":"https://pbs.twimg.com/profile_images/436161151403954177/kXtpHqDI_400x400.jpeg",
+        "curse words":"http://2.bp.blogspot.com/-CKAU5jMbFOA/VYQbKReagiI/AAAAAAAABUA/dhVnOe3BUPg/s1600/curse%2Bwords.jpg",
+        "Google": 'https://placehold.it/250x250'
+      },
+    });
+  });

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,126 +8,194 @@
     <!--Import Google Icon Font-->
     <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     Import materialize.css -->
-    <link type="text/css" rel="stylesheet" href="Public/css/materialize-icons.css"  media="screen,projection"/>
-    <link type="text/css" rel="stylesheet" href="Public/css/materialize.min.css"  media="screen,projection"/>
-    <link type="text/css" rel="stylesheet" href="Public/css/animate.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="Public/css/materialize-icons.css" media="screen,projection" />
+    <link type="text/css" rel="stylesheet" href="Public/css/materialize.min.css" media="screen,projection" />
     <link rel="stylesheet" href="Public/css/estilos.css">
-    <link rel="stylesheet" href="Public/css/all.min.css">
-    <style>
-     ul.tabs li a{
-         font-size:20px!important;
-         color: white;
-     }
-     ul.tabs li a:focus{
-         font-size:28px!important;
-         color: black!important;
-     }
-
-     blockquote img{
-         height:320px!important;
-     }
-     .delay1{
-         animation-delay: 4s;
-         animation-duration: 1.9s;
-     }
-     .delay2{
-         animation-delay: 5s;
-         animation-duration: 1.9s;
-        }
-        .delay3{
-         animation-delay: 6s;
-         animation-duration: 1.9s;
-        }
-   
-    </style>
+    <!-- <link rel="stylesheet" href="Public/css/all.min.css"> -->
     <script src="Public/js/jquery-3.2.1.min.js"></script>
     <script src="Public/js/materialize.min.js"></script>
-    <script>
-      $(document).ready(function(){
-        $('.scrollspy').scrollSpy();
-    });</script>
+    <script src="Public/js/jess.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script> -->
 
-    <title>Society</title>
+    <title>HOMEWORK
+    </title>
 </head>
+<!-- nota sobre el clearfix -->
+<!-- cuando agregas un clearfix despues de un contenedro (div)
+que tiene por ejemplo l5, esto hara queel contenedor de abajo no se ponga
+al lado de el primero sino se pondra abajo -->
+<!-- NOTA SOBRE EL ROW -->
+<!-- cuando agregar columas a contenedores... frozosamente debes de 
+encerrar los contenedores en un row.. el row es necesario para utilizar
+las rejillas de materialize -->
+
 <body>
-    <div class="white" style="height: 350vh; opacity: .8;">
-       
-        <h1 class="animated fadeInDown delay1 center hoverable z-depth-2 purple lighten-2" style="opacity: .9; margin-top:0px;">SOCIETY IN THE U.S</h1>
-        <ul class="tabs animated fadeInUp delay2">
-            <li class="tab col l3"><a href="#contenido1">Objective</a></li>
-            <li class="tab col l3"><a href="#contenido2">College</a></li>
-            <li class="tab col l3"><a href="#contenido3">Making friends</a></li>
-            <li class="tab col l3"><a href="#contenido4">Closure</a></li>
-        </ul>
-        <div class="container">
-        
-            <div class="row animated fadeInRight delay3">
-                <div id="contenido1">
-                    <h4>Objective</h4>
-                    <blockquote class="col l4">
-                       <img src="Public/img/1.jpg" alt="" class="responsive-img circle">
-                       <h5>Get involve</h5>
-                     
-                    </blockquote>
-                    <blockquote class="col l4">
-                       <img src="Public/img/2.jpg" alt="" class="responsive-img circle">
-                       <h5>The main diferences</h5>
-                    </blockquote>
-                    <blockquote class="col l4">
-                       <img src="Public/img/3.jpg" alt="" class="responsive-img circle">
-                       <h5>Some advice</h5>
-                    </blockquote>
-                   
+    <h2 class="center hoverable z-depth-5  white-text"><B>HOW TO IMPROVE YOUR ENGLISH SKILLS</B> <i class="material-icons">beenhere</i></h2>
+    <div class="container ">
+        <div style="position:fixed; right: -7px; z-index: 3;">
+            <ul class="section table-of-contents white-text">
+                <li><a class="white-text" href="#seccion1">why to learn english? </a></li>
+                <li><a class="white-text" href="#seccion2"><i class="material-icons tiny">grade</i><i class="material-icons tiny">grade</i></a></li>
+                <li><a class="white-text" href="#seccion3">Useful to improve </a></li>
+
+                <li><a class="white-text" href="#seccion8"><i class="material-icons tiny">cloud</i> <i class="material-icons tiny">cloud</i></a></li>
+
+
+            </ul>
+        </div>
+        <div class="section scrollspy" id="seccion1">
+            <!-- <h1 class="center hoverable z-depth-2 green lighten-2">Jessi</h1> -->
+            <div class="row">
+                <h5>Why should you learn english?</h5>
+
+                <div class="card col l6 blue lighten-4">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="Public/img/english/3.jpg">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">That's hilarious<i class="material-icons right">more_vert</i></span>
+
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4"> It Can Help You Get a Better Job<i class="material-icons right">close</i></span>
+                        <p> English is the most commonly spoken language in the world. One out of five people can speak or
+                            at least understand English!. Companies are becoming more international, and English is listed
+                            as an essential skill for more and more jobs. There are some organisations that now conduct all
+                            their business in English, no matter where in the world they are based. If you want the best
+                            paid opportunities, learning English is a great idea.
+                        </p>
+                    </div>
                 </div>
-                <div id="contenido2">
-                    <h4>College</h4>
-                    <blockquote class="col l4">
-                       <img src="Public/img/4.jpg" alt="" class="responsive-img circle">
-                       <h5>Too expensive</h5>
-                      
-                    </blockquote>
-                    <blockquote class="col l4">
-                       <img src="Public/img/13.jpg" alt="" class="responsive-img circle">
-                       <h5>18 to 22</h5>
-                      
-                    </blockquote>
-                    <blockquote class="col l4">
-                       <img src="Public/img/6.jpg" alt="" class="responsive-img circle">
-                       <h5>Get job and move on</h5>
-                    </blockquote>
-                   
+                <div class="card col l6 blue lighten-4">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="Public/img/english/2.jpg">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">Useful Language<i class="material-icons right">more_vert</i></span>
+
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4"> It Makes It Easier to Travel<i class="material-icons right">close</i></span>
+                        <p>
+                            As I said before, English is the world’s second language. This means that learning English makes it much easier to travel
+                            anywhere you want. For example, aeroplane announcements, train timetables, emergency information
+                            and street signs are often translated into English, particularly in countries that use a different
+                            type of alphabet. Plus, even if you don’t find other travellers or local people that speak your
+                            mother tongue, you are practically guaranteed to find someone who understands some English.
+                        </p>
+                    </div>
                 </div>
-                <div id="contenido3">
-                    <h4>Making Friends</h4>
-                    <blockquote class="col l4">
-                       <img src="Public/img/7.png" alt="" class="responsive-img circle">
-                       <h5>Be patient and polite</h5>
-                    </blockquote>
-                    <blockquote class="col l4">
-                       <img src="Public/img/8.jpg" alt="" class="responsive-img circle">
-                       <h5>Follow some club</h5>
-                    </blockquote>
-                    <blockquote class="col l4">
-                       <img src="Public/img/9.jpg" alt="" class="responsive-img circle">
-                       <h5>Use compliments</h5>
-                    </blockquote>
+                <div class="card col l6 blue accent-1">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="Public/img/english/1.jpg">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">It's not a big deal though<i class="material-icons right">more_vert</i></span>
+
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">Speaking English gives you Access to a World of
+                            Entertainment
+                            <i class="material-icons right">close</i></span>
+                        <p>
+                            Many of the world’s top films, books and music are published and produced in English. Therefore, by learning English you
+                            will have access to a great wealth of entertainment and will be able to have a greater cultural
+                            understanding. If you speak English, you won't need to rely on translations and subtitles anymore
+                            to enjoy your favourite books, songs, films and TV shows. Watching movies and television programmes
+                            in the English language is also a great and fun way to learn it!</p>
+                    </div>
                 </div>
-                <div id="contenido4">
-                    <h4>Closure</h4>
-                    <blockquote class="col l6">
-                       <img src="Public/img/10.jpg" alt="" class="responsive-img circle">
-                       <h5>You're gonna get along with everybody rapdly</h5>
-                    </blockquote>
-                    <blockquote class="col l6">
-                       <img src="Public/img/11.jpg" alt="" class="responsive-img circle">
-                       <h5>Just go along with the flow</h5>
-                    </blockquote>
-                   
+                <div class="card col l6 blue accent-1">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="Public/img/english/4.jpg">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">Meet new people<i class="material-icons right">more_vert</i></span>
+
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">How do you approach your english training?<i class="material-icons right">close</i></span>
+                        <p>
+                            English is based on a simple alphabet and it is fairly quick and easy to learn compared to other languages. English is not
+                            only useful – it gives you a lot of satisfaction. Making progress feels great. You will enjoy
+                            learning English, if you remember that every hour you spend gets you closer to perfection.</p>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+    </div>
+    <div class="clearfix"></div>
+    <div class="section scrollspy" id="seccion2">
+        <div class="parallax-container">
+            <div class="parallax">
+                <img src="Public/img/16.jpg" alt="">
+
+            </div>
+        </div>
+
+    </div>
+    <div class="clearfix"></div>
+    <div class="container">
+        <div class="section scrollspy " id="seccion3">
+            <h5>Another piece of advice</h5>
+            <ul class="collapsible blue lighten-2 ">
+                <li>
+                    <div class="collapsible-header"><i class="material-icons">add</i>First</div>
+                    <div class="collapsible-body"><span class="">try to keep that in mind</span></div>
+                </li>
+                <li>
+                    <div class="collapsible-header"><i class="material-icons">add</i>Second</div>
+                    <div class="collapsible-body"><span>make a schedule
+                        </span></div>
+                </li>
+                <li>
+                    <div class="collapsible-header"><i class="material-icons">add</i>Third</div>
+                    <div class="collapsible-body"><span>divide topics in simple particles</span></div>
+                </li>
+                <li>
+                    <div class="collapsible-header"><i class="material-icons">add</i>Fourth</div>
+                    <div class="collapsible-body"><span>one step at a time</span></div>
+                </li>
+                <li>
+                    <div class="collapsible-header"><i class="material-icons">add</i>Fifth</div>
+                    <div class="collapsible-body"><span>hit your goals</span></div>
+                </li>
+                <li>
+                    <div class="collapsible-header"><i class="material-icons">add</i>Sixth</div>
+                    <div class="collapsible-body"><span>the more trouble it it. the more it'll be worth it.</span>
+
+                    </div>
+
+                </li>
+            </ul>
+            <div class="col s12 white">
+                <div class="row">
+                    <div class="input-field col s6">
+                        <i class="material-icons prefix">textsms</i>
+                        <input type="text" id="autocomplete-input" class="autocomplete">
+                        <label for="autocomplete-input">Autocomplete</label>
+                    </div>
                 </div>
             </div>
         </div>
-        <br>
-    </div>
 
+    </div>
+    <div class="clearfix"></div>
+    <div class="section scrollspy" id="seccion8">
+        <div class="parallax-container">
+            <div class="parallax">
+                <img src="Public/img/13.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="clearfix"></div>
 </body>
+
 </html>

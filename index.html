@@ -1,201 +1,748 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!--Import Google Icon Font-->
-    <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    Import materialize.css -->
-    <link type="text/css" rel="stylesheet" href="Public/css/materialize-icons.css" media="screen,projection" />
-    <link type="text/css" rel="stylesheet" href="Public/css/materialize.min.css" media="screen,projection" />
-    <link rel="stylesheet" href="Public/css/estilos.css">
-    <!-- <link rel="stylesheet" href="Public/css/all.min.css"> -->
-    <script src="Public/js/jquery-3.2.1.min.js"></script>
-    <script src="Public/js/materialize.min.js"></script>
-    <script src="Public/js/jess.js"></script>
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script> -->
-
-    <title>HOMEWORK
-    </title>
+	<title>English Yair</title>
+	<link rel="stylesheet" type="text/css" href="css/materialize-icons.css">
+	<link rel="stylesheet" type="text/css" href="css/materialize.min.css">
+	<script type="text/javascript" src="js/jquery-1.12.1.min.js"></script>
+	<script type="text/javascript" src="js/materialize.min.js"></script>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+	<style type="text/css">
+		.block {
+			height: 100px
+		}
+	</style>
+	<script>
+		$(document).ready(function () {
+			$('input.autocomplete').autocomplete({
+				data: {
+					"1. I NEVER USED TO GO TO BED LATE.. BUT NOW I DO": null,
+					"1. I USED TO GO TO THE GYM, NOW I DON'T DO ANYMORE": null,
+					"1. I USED TO PLAY VIDEOGAMES, WHEN I WAS A CHILD": null,
+					"1. I'M USED TO GETTING UP EARLY EVERY DAY": null,
+					"1. I'M USED TO STUDYING ENGLISH EVERY DAY": null,
+					"1. I'M USED TO SLEEPING LATE": null,
+					"2. I ONLY GOT FIVE HOURS OF SLEEP": null,
+					"2. I DON'T LIKE TO GET DISTRACTED BY SOCIAL MEDIA": null,
+					"2. SHE USED TO GET HOME AT 5 O'CLOCK": null,
+					"2. I GOT BACK FROM WORK 5 MINUTES AGO, I STILL HAVE WORK HERE THOUGH": null,
+					"2. I DON'T GET WHY YOU DIDN'T LIKE THE SHOW": null,
+					"2. I'M AFRAID I NEED TO GET GOING": null,
+					"2. LET'S GET TOGETHER SOON": null,
+					"3. SHE'S BEAUTIFUL, SHE CAN'T FOOL ME THOUGH": null,
+					"3. ENGLISH IS TOUGH, LEARNING WITH YOU IS EASY THOUGH": null,
+					"3. I HATE ONIONS, BUT THIS ONION SNACK IS PRETTY GOOD THOUGH": null,
+					"3. LEARNING ONLINE IS GREAT, MY TIME IS LIMITED THOUGH": null,
+					"3. I LIKE MY JOB, WAKING UP IS HARD THOUGH": null,
+					"3. I'M GOING TO MARRY HIM. WELL, I FEEL HESITANT THOUGH": null,
+					"3. THERE IS A LOT OF ENGLISH VOCABULARY, THIS LESSON MADE IT EASY THOUGH": null,
+					"3. I LIKE PATRICK'S ENGLISH CLASS, HIS TEACHING IS THOUGH": null,
+					"4. I SHOULDA STUDIED MORE ENGLISH BEFORE TAKE THIS TEST": null,
+					"4. I SHOULDA BROUGHT MY COAT, IT'S SO COLD HERE": null,
+					"4. I COULDA GONE TO THE DRUGSTORE": null,
+					"4. I COULDA SLEPT, BUT INSTEAD I DECIDED TO STUDY ENGLISH": null,
+					"5. I TAKE A WALK EVERY DAY": null,
+					"5. SHE NEEDS TO GO FOR A WALK EVERY DAY FOR 30 MINUTES": null,
+					"5. WHERE DO YOU LIKE TO GO FOR A WALK?": null,
+					"5. DO YOU THINK, I'LL NEED TO TAKE A WALK EVERY DAY?": null,
+					"6. COULD YOU GIVE ME A HAND WITH THIS FURNITURE?": null,
+					"6. COULD YOU PLEASE SHOW ME HOW TO USE THE MOTORCYCLE?": null,
+					"6. COULD YOU PLEASE HELP ME OUT WITH MY HOMEWORK?": null,
+					"6. I NEED HELP TO MOW THE LAWN": null,
+					"6. COULD YOU SEND ME THE PROYECT FILES?": null,
+					"6. WILL YOU GIVE ME A MOMENT OF YOUR TIME?": null,
+					"6. HOW DO I MAKE NEW FRIENDS?": null,
+					"6. I NEED YOUR HELP WITH THIS PROYECT": null,
+					"7. I HAVE NO TIME": null,
+					"7. HE HAS NO MONEY": null,
+					"7. YOU HAVE NO FRIENDS": null,
+					"7. NONE OF MY TIME IS USED WISELY": null,
+					"7. NONE OF HIS MONEY WENT TO CHARITY": null,
+					"7. NONE OF MY FRIENDS WANT TO HANG OUT TODAY": null,
+					"8. SOUNDS GOOD": null,
+					"8. THAT DOESN'T SOUND GOOD": null,
+					"8. YOU DON'T SOUND GOOD": null,
+					"8. SHE SEEMS A NICE GIRL": null,
+					"8. YOUR FRIEND SEEMS ANGRY": null,
+					"8. THAT PLACE SEEMS DANGEROUS": null,
+					"9. LET'S GO FOR A WALK UP THE STREET": null,
+					"9. SHE SCROLLED DOWN ON THE PAGE": null,
+					"9. SHE PUT HER HAND UP AND HE PUT HIS HAND DOWN": null,
+					"9. I PUT A SHELF ABOVE THE TV": null,
+					"9. HIDE HIS KEYS BELOW THE SINK": null,
+					"9. MY NAME IS ABOVE YOUR NAME": null,
+					"9. OUR SALES WERE BELOW THE TARGET AMOUNT THIS MONTH": null,
+					"10. I HAVE TO BE NICE": null,
+					"10. I HAVE TO BE KIND": null,
+					"10. I DON'T GET ALONG WITH HER": null,
+					"10. HOW DOES IT SEEM TO YOU IF WE GO TO THE PARTY TONIGHT?": null,
+					"10. I'LL GO ON VACATION NEXT MONTH": null,
+					"10. THIS MONTH HAS FOUR FORTNIGHTS": null,
+					"10. I GOT INTO STUDY ENGLISH 2 YEARS AGO": null,
+					"11. LET ME CUT YOU OFF HERE, 'COZ YOU'RE WRONG": null,
+					"11. IT WAS SO HARD FOR ME TO IMPROVE MY ENGLISH SKILLS": null,
+					"11. I HAD A GATHERING LAST NIGHT WITH MY BOSS": null,
+					"11. I KEEP LEARNING MORE ENGLISH": null,
+					"11. IN MY JOB I DO PROGRAMMING": null,
+					"11. IN MY WORK I FABRICATE HINGES": null,
+					"12. EXCUSE ME BUT I'D LIKE TO SAY SOMETHING HERE BEFORE TO CONTINUE": null,
+					"12. I'M SORRY TO INTERRUPR YOU BUT I NEED TO GET GOING NOW": null,
+					"12. I WIIL CUT YOU OFF": null,
+					"12. THIS SONG IS CATCHY": null,
+					"12. DOES THAT MAKE SENSE?": null,
+					"12. YOU NEED TO PUT THEM IN THEIR PLACE": null,
+					"12. ARE YOU AND ENTREPRENEUR?": null,
+					"13. MY PHONE IS ABOUT TO DIE, I NEED TO CHARGE IT": null,
+					"13. MY FEET ARE KILLING ME, I'M GONNA SIT DOWN HERE FOR A MOMENT": null,
+					"13. DON'T WORRY I'M COMPLETELY SURE EVERYTHING WILL BE SMOOTHLY BETTER": null,
+					"13. WHY DO YOU DOUBT?": null,
+					"13. I LIVE ELSE WHERE FAR FROM HERE": null,
+					"13. I THOUGHT YOU HAD GOTTEN BACK TO HOME": null,
+					"14. I WISH I COULD TRAVEL AROUND THE WORLD": null,
+					"14. WHEN WILL YOU GO ON LONG VACATION?": null,
+					"14. I DON'T KNOW HIM": null,
+					"14. I HAVEN'T MET HIM": null,
+					"14. I WASN'T OK WITH MY ENGLISH CLASSES": null,
+					"14. I WASN'T HAPPY WITH THE RESULTS": null,
+					"14. I WASN'T SATISFIED WITH THE SERVICE": null,
+					"15. YOU FLATTER ME": null,
+					"15. I FEEL FLATTER": null,
+					"15. QUESTION": null,
+					"15. SHE LITERALLY SAID THAT": null,
+					"15. UNFORTUNATELY": null,
+					"15. WORLD": null,
+					"15. WIDTH": null,
+					"15. DAUGHTER": null,
+					"15. WATCHED": null,
+					"15. CHANGED": null,
+					"15. CONGRATULATIONS": null,
+					"15. FEBRUARY": null,
+					"16. CHARACTERISTIC": null,
+					"16. SCHEDULE": null,
+					"16. SHOULD'VE": null,
+					"16. COULD'VE": null,
+					"16. I CAUGHT YOU": null,
+					"16. UNCONSCIOUS": null,
+					"16. MURDERER": null,
+					"16. VOCABULARY": null,
+					"17. COMFORTABLE": null,
+					"17. AVAILABLE": null,
+					"17. RESEARCH": null,
+					"17. MUSEUM": null,
+					"17. IT'S WORTH A TRY": null,
+					"18. OPPORTUNITY": null,
+					"18. THROUGH": null,
+					"18. THROUGHOUT": null,
+					"18. THOROUGHLY": null,
+					"18. THOUGH": null,
+					"18. FOREIGN": null,
+					"19. I DON'T LIKE TO MEES IT UP": null,
+					"19. LET'S RESCHEDULE BECAUSE I DO LOOKING FORWARD TO TALKING WITH YOU": null,
+					"19. INEVITABLY": null,
+					"19. THOUGHT": null,
+					"20. I FLUNKED IN MY TEST": null,
+					"20. THEY RUN SOME TEST ON HER": null,
+					"20. HE'S FLIRTING WITH HER": null,
+					"20. WELL DATING OVER HERE IS MESSY": null,
+					"20. THAT'S COOL THAT THERE IS LIKE A SYSTEM THERE": null,
+					"20. LIKE, WHAT YOU WOULD CALL A BABY OR PUPPY?": null,
+					"21. JUST LET ME KNOW WHENEVER YOU WANT TO LISTEN ON HOW TO CUS SOMEONE OUT ANYHOW": null,
+					"21. I JUST CAME BACK FROM A BUSINESS CONFERENCE": null,
+					"21. I FEEL MOTIVATED": null,
+					"21. IT JUST SUCKS WHEN I SEE HER AROUND HERE": null,
+					"21. WE'RE MENTORED BY THE SAME BUSINESS COACHES": null,
+					"22. WE'RE BOTH MATURE ABOUT IT": null,
+					"22. THANKS FOR ASKING": null,
+					"22. THAT'S HILARIOUS": null,
+					"22. I'M JUST SURPRISED": null,
+					"22. STICK TO THOSE TWO BECAUSE IT'S CONSIDERED REALLY RUDE TO INTERRUPT SOMEONE ANYWAY": null,
+					"23. IF YOU WANT TO RESPECTFULLY INTERRUPT SOMEONE": null,
+					"23. MY RIGHT HAND IS SWOLLEN": null,
+					"23. LIKE IF YOU HAVE NIECES OR NEPHEWS AND YOU SAY THEM DISRESPECT TO YOUR SIBLING, YOU WOULD TURN TO YOUR SIBLING AND SAY LIKE, HEY YOU NEED TO PUT THEM IN THEIR PLACE": null,
+					"23. IT'S LIKE LETTING SOMEONE KNOWS WHO IS IN CHARGE": null,
+					"24. SHE PUNISHED ME YESTERDAY": null,
+					"24. I'LL FEEL ASHAMED": null,
+					"24. I FELT NERVOUS, STUPID AND ASHAMED": null,
+					"24. I FELL ASLEEP DOING HOMEWORK": null,
+					"24. HOW DO YOU APPROACH YOUR ENGLISH TRAINING?": null,
+					"24. YOU NEED TO FOCUS ON YOUR WEAKNESSES": null,
+					"25. I NEED TO APPROACH TO MY GOALS": null,
+					"25. SHE NEEDS TO APPROACH THIS OPPORTUNITY": null,
+					"25. HE NEEDS TO REACH HIS GOALS": null,
+					"25. I DON'T LIKE TO RUSH ON MORNINGS": null,
+					"25. NON-NATIVE SPEAKERS": null,
+					"26. WHERE DID YOU GET STUCK?": null,
+					"26. WHAT TIME WILL YOU BE AVAILABLE?": null,
+					"26. I LACK TO PRACTICE MORE MY ENGLISH": null,
+					"26. I LACKED TO DO MY BEST": null,
+					"26. I DIDN'T NOTICE ABOUT MY LACK OF FLUENTLY": null,
+					"26. I PRACTICE TEN NEW WORDS WEEKLY": null,
+					"27. I HAVE OFF SO I'M TRAVELING TO ANOTHER CITY WITH SOME FRIENDS": null,
+					"27. I'M LIVING HERE THESE DAYS": null,
+					"27. I USED TO GO TO THE GYM BUT IT DIDN'T LAST LONG": null,
+					"27. MONICA'S MEANS THE WORLD FOR HER MOM": null,
+					"27. I WANT TO SHARE WITH YOU": null,
+					"28. I'M TRYING TO BE POLITE": null,
+					"28. HE GETS ON MY NERVES": null,
+					"28. THEY THINK THAT WE GO TO STEAL THEIR JOBS": null,
+					"28. MONEY WISE, THEY ARE SO POOR": null,
+					"28. PLEASE SCREW THIS SHELF": null,
+					"29. IT'S DIRTY": null,
+					"29. YOU'RE SMILE IS SO CUTE": null,
+					"29. WHY ARE YOU LAUGHING?": null,
+					"29. HONESTLY": null,
+					"29. PLEASE GO AWAY": null,
+					"30. PROMISE ME": null,
+					"30. I'M WORRIED": null,
+					"30. SET IT ON THE TABLE": null,
+					"30. NOISY": null,
+					"30. LOOK AT ME": null,
+					"31. IT MIGHT BE A GREAT IDEA TO COLABORATE WITH YOU": null,
+					"31. SHE YAWNED THREE TIMES": null,
+					"31. SHE SCREAMS AND IT'S NOISY": null,
+					"31. LEAVE IT THERE": null,
+					"31. MUG AND FORK, SPOON AND KNIFE": null,
+					"32. POT AND PAN": null,
+					"32. NEIGHBORS": null,
+					"32. I FEEL WEAK": null,
+					"32. SHE FEEL DOWN": null,
+					"32. SOUP AND SOAP": null,
+					"33. I WIIL FIND OUT": null,
+					"33. I WILL GO BACK HOME": null,
+					"33. I NEED TO COME BACK TO WORK": null,
+					"33. I WISH I HAD FREE TIME TO SPEND WITH YOU": null,
+					"33. I WISH I HAD BOUGHT A NEW BOOK FOR MY ENGLISH CLASS": null,
+					"33. I WISH I HAD BROUGHT MY COMPUTER": null,
+					"34. YOU HAVE A REALLY LOW BODY FAT PERCENTAGE": null,
+					"34. YOU'RE SHREDDED": null,
+					"34. I WISH I HAD A VIDEO": null,
+					"34. HOW ARE YOU GETTING THERE?": null,
+					"34. DID YOU MAKE IT TO CHILE YET?": null,
+					"35. I'M GLAD YOU HAD A SAFE TRIP": null,
+					"35. MY DOG SNUCK IN MY ROOM": null,
+					"35. WHAT IS YOUR MEASUREMENT SYSTEM TO EVALUATE US?": null,
+					"35. HAVE YOU DONE ANYTHING FUN YET?": null,
+					"36. HE'S A SUCCESS BUSINESS MAN": null,
+					"36. I'M FEELING PRETTY ANXIOUS ABOUT MY INTERVIEW TOMORROW": null,
+					"36. SHE'S A TOTALLY VALUABLE GIRL OF OUR TEAM": null,
+					"36. IT'S A COMPLEX ISSUE BUT WE NEED TO FIND A SOLUTION": null,
+					"37. IF YOU HAVE ANY SPECIFIC QUESTIONS JUST ASK ME": null,
+					"37. I'M NOT COMFORTABLE DOING THIS": null,
+					"37. I'D BETTER LEAVE NOW OR ELSE I'LL BE LATE": null,
+					"37. YOU'D BETTER TAKE AN UMBRELLA, IT'S GONNA BE A RAINY DAY": null,
+					"37. HADN'T WE BETTER STUDY NOW?": null,
+					"37. I'D BETTER SET TWO ALARMS OTHERWISE I WON'T WAKE UP EARLY": null,
+					"37. YOU'D BETTER EAT A LARGE BREAKFAST, IT'S A LONG DAY": null,
+					"37. I'D BETTER STOP EATING JUNK FOOD IF I REALLY WANNA CUT, OR ELSE I'LL GET FAT": null,
+					"37. YOU ARE EXTREMELY BUSY IN THERE, I'D BETTER NOT DISTURB YOU FOR A WHILE": null,
+					"38. I HAVE TO DO MY HOMEWORK": null,
+					"38. I MUST LEARN MORE ENGLISH THIS YEAR": null,
+					"38. I HAVE STOPPED THINKING ENGLISH IS TOUGH": null,
+					"38. I HAVE STOPPED EATING JUNK FOOD SINCE I WANNA CUT": null,
+					"38. I STOPPED TO BUY SOMETHING TO EAT": null,
+					"38. I STOPPED AT HOUSE TO GRAB MY PHONE": null,
+					"39. WOOD IS HARD": null,
+					"39. THE EXAM WAS HARD": null,
+					"39. HE HIT THE BALL HARD": null,
+					"39. SHE WORKS HARD": null,
+					"39. RUNNING A MARATHON IS HARD": null,
+					"40. I WOULD RATHER BE IN BED THAN BE IN THE OFFICE": null,
+					"40. I WOULD RATHER TALK TO YOU THAN GO OUT WITH FRIENDS": null,
+					"40. I WOULD RATHER STAY AT HOME THAN GO TO THE PARTY": null,
+					"41. BOTH TEA NOT COFFEE CONTAIN CAFFEINE": null,
+					"41. NEITHER TEA OR COFFEE CONTAIN ALCOHOL": null,
+					"41. I USUALLY DRINK EITHER COFFEE OR TEA BUT JUST ONE NOT BOTH": null,
+					"42. I'M GONNA LET MY FRIEND KNOW, I'LL GO WITH HIM TOMORROW": null,
+					"42. LEARNING ENGLISH IS FUN": null,
+					"42. GOING OUT WITH FRIENDS IS FUN": null,
+					"42. JOKES ARE FUNNY": null,
+					"42. THAT'S FUNNY": null,
+					"43. WHAT DID YOU USE TO DO WHEN YOU WERE A CHILD?": null,
+					"43. WHAT DID YOU USE TO DO IN YOUR CHILDHOOD?": null,
+					"43. IF ONLY I COULD BE THERE RIGHT NOW, I'D GIVE YOU A BIG HUG": null,
+					"43. IF ONLY I HAD ENOUGH MONEY, I'D TRAVEL NEXT WEEK": null,
+					"43. IF ONLY I HADN´T LEFT THE CAR KEYS AT HOME": null,
+					"43. IF ONLY I COULD GET MY JOB VISA, I´D BE SO HAPPY": null,
+					"44. IF I WERE RICH, I´D BUY A NEW CAR": null,
+					"44. IF I WERE RICH, I´D HELP MY MOM WITH ALL THE EXPENSES": null,
+					"44. IF I WERE WITH YOU, YOUR FAMILY WOULD BE SO HAPPY": null,
+					"44. I HAD MY HAIR CUT AT THAT HAIRDRESSER´S": null,
+					"44. I HAD MY CLOTHES CLEANED YESTERDAY": null,
+					"45. YOU ARE SO NICE": null,
+					"45. YOU ARE SUCH A NICE GIRL": null,
+					"45. I GO RUNNING EVERYDAY FOR TEN MINUTES": null,
+					"45. I HAVE BEEN RECORDING THIS VIDEO SINCE TEN O´CLOCK": null,
+					"46. I´M USED TO THE COLD WEATHER": null,
+					"46. I´M USED TO WEARING WARM CLOTHES OUTSIDE": null,
+					"46. I´M NOT USED TO WEARING WARM CLOTHES IN MY OFFICE": null,
+					"47. ARE YOU ACTUALLY MAD AT ME?": null,
+					"47. ACTUALLY NO, I'M FROM MEXICO": null,
+					"47. I LOVE GO TO THE GYM, BUT I ACTUALLY DON'T LIKE TO SWEAT": null,
+					"47. ACTUALLY YES, I DID": null,
+					"47. I'M A PROGRAMMER, AND SO IS MY SIBLING ACTUALLY": null,
+					"48. RESPECFUL": null,
+					"48. YOU ARE SPOILED": null,
+					"48. THANKS FOR YOUR COMPLIMENTS": null,
+					"48. IT HAS A SPECIAL PLACE IN MY HEART": null,
+					"49. UNFORTUNATELY HE JUST PASSED AWAY": null,
+					"49. ONE OF ME PET PEEVES IS WHEN PEOPLE CANCEL PLANS": null,
+					"49. ONE OF MY PET PEEVES IS WHEN PEOPLE DON'T USE SIMPLE MANNERS": null,
+					"49. I'LL TALK TO YOU LATER": null,
+					"49. HOW LONG DID THAT TAKE?": null,
+					"50. I WON'T GO OUT WITH YOUR LITTLE SISTER, SHE'S BUSTED": null,
+					"50. YOU ARE THE GOAT": null,
+					"51. BAE, YOU'RE THE BEST": null,
+					"51. THANK YOU FOR MAKING THE TIME": null,
+					"51. I DON'T KNOW HOW BUSY YOU ARE": null,
+					"52. ": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+					"": null,
+				},
+			});
+		});</script>
 </head>
-<!-- nota sobre el clearfix -->
-<!-- cuando agregas un clearfix despues de un contenedro (div)
-que tiene por ejemplo l5, esto hara queel contenedor de abajo no se ponga
-al lado de el primero sino se pondra abajo -->
-<!-- NOTA SOBRE EL ROW -->
-<!-- cuando agregar columas a contenedores... frozosamente debes de 
-encerrar los contenedores en un row.. el row es necesario para utilizar
-las rejillas de materialize -->
 
-<body>
-    <h2 class="center hoverable z-depth-5  white-text"><B>HOW TO IMPROVE YOUR ENGLISH SKILLS</B> <i class="material-icons">beenhere</i></h2>
-    <div class="container ">
-        <div style="position:fixed; right: -7px; z-index: 3;">
-            <ul class="section table-of-contents white-text">
-                <li><a class="white-text" href="#seccion1">why to learn english? </a></li>
-                <li><a class="white-text" href="#seccion2"><i class="material-icons tiny">grade</i><i class="material-icons tiny">grade</i></a></li>
-                <li><a class="white-text" href="#seccion3">Useful to improve </a></li>
-
-                <li><a class="white-text" href="#seccion8"><i class="material-icons tiny">cloud</i> <i class="material-icons tiny">cloud</i></a></li>
-
-
-            </ul>
-        </div>
-        <div class="section scrollspy" id="seccion1">
-            <!-- <h1 class="center hoverable z-depth-2 green lighten-2">Jessi</h1> -->
-            <div class="row">
-                <h5>Why should you learn english?</h5>
-
-                <div class="card col l6 blue lighten-4">
-                    <div class="card-image waves-effect waves-block waves-light">
-                        <img class="activator" src="Public/img/english/3.jpg">
-                    </div>
-                    <div class="card-content">
-                        <span class="card-title activator grey-text text-darken-4">That's hilarious<i class="material-icons right">more_vert</i></span>
-
-                    </div>
-                    <div class="card-reveal">
-                        <span class="card-title grey-text text-darken-4"> It Can Help You Get a Better Job<i class="material-icons right">close</i></span>
-                        <p> English is the most commonly spoken language in the world. One out of five people can speak or
-                            at least understand English!. Companies are becoming more international, and English is listed
-                            as an essential skill for more and more jobs. There are some organisations that now conduct all
-                            their business in English, no matter where in the world they are based. If you want the best
-                            paid opportunities, learning English is a great idea.
-                        </p>
-                    </div>
-                </div>
-                <div class="card col l6 blue lighten-4">
-                    <div class="card-image waves-effect waves-block waves-light">
-                        <img class="activator" src="Public/img/english/2.jpg">
-                    </div>
-                    <div class="card-content">
-                        <span class="card-title activator grey-text text-darken-4">Useful Language<i class="material-icons right">more_vert</i></span>
-
-                    </div>
-                    <div class="card-reveal">
-                        <span class="card-title grey-text text-darken-4"> It Makes It Easier to Travel<i class="material-icons right">close</i></span>
-                        <p>
-                            As I said before, English is the world’s second language. This means that learning English makes it much easier to travel
-                            anywhere you want. For example, aeroplane announcements, train timetables, emergency information
-                            and street signs are often translated into English, particularly in countries that use a different
-                            type of alphabet. Plus, even if you don’t find other travellers or local people that speak your
-                            mother tongue, you are practically guaranteed to find someone who understands some English.
-                        </p>
-                    </div>
-                </div>
-                <div class="card col l6 blue accent-1">
-                    <div class="card-image waves-effect waves-block waves-light">
-                        <img class="activator" src="Public/img/english/1.jpg">
-                    </div>
-                    <div class="card-content">
-                        <span class="card-title activator grey-text text-darken-4">It's not a big deal though<i class="material-icons right">more_vert</i></span>
-
-                    </div>
-                    <div class="card-reveal">
-                        <span class="card-title grey-text text-darken-4">Speaking English gives you Access to a World of
-                            Entertainment
-                            <i class="material-icons right">close</i></span>
-                        <p>
-                            Many of the world’s top films, books and music are published and produced in English. Therefore, by learning English you
-                            will have access to a great wealth of entertainment and will be able to have a greater cultural
-                            understanding. If you speak English, you won't need to rely on translations and subtitles anymore
-                            to enjoy your favourite books, songs, films and TV shows. Watching movies and television programmes
-                            in the English language is also a great and fun way to learn it!</p>
-                    </div>
-                </div>
-                <div class="card col l6 blue accent-1">
-                    <div class="card-image waves-effect waves-block waves-light">
-                        <img class="activator" src="Public/img/english/4.jpg">
-                    </div>
-                    <div class="card-content">
-                        <span class="card-title activator grey-text text-darken-4">Meet new people<i class="material-icons right">more_vert</i></span>
-
-                    </div>
-                    <div class="card-reveal">
-                        <span class="card-title grey-text text-darken-4">How do you approach your english training?<i class="material-icons right">close</i></span>
-                        <p>
-                            English is based on a simple alphabet and it is fairly quick and easy to learn compared to other languages. English is not
-                            only useful – it gives you a lot of satisfaction. Making progress feels great. You will enjoy
-                            learning English, if you remember that every hour you spend gets you closer to perfection.</p>
-
-                    </div>
-                </div>
-
-            </div>
-
-        </div>
-
-
-    </div>
-
-    </div>
-    <div class="clearfix"></div>
-    <div class="section scrollspy" id="seccion2">
-        <div class="parallax-container">
-            <div class="parallax">
-                <img src="Public/img/16.jpg" alt="">
-
-            </div>
-        </div>
-
-    </div>
-    <div class="clearfix"></div>
-    <div class="container">
-        <div class="section scrollspy " id="seccion3">
-            <h5>Another piece of advice</h5>
-            <ul class="collapsible blue lighten-2 ">
-                <li>
-                    <div class="collapsible-header"><i class="material-icons">add</i>First</div>
-                    <div class="collapsible-body"><span class="">try to keep that in mind</span></div>
-                </li>
-                <li>
-                    <div class="collapsible-header"><i class="material-icons">add</i>Second</div>
-                    <div class="collapsible-body"><span>make a schedule
-                        </span></div>
-                </li>
-                <li>
-                    <div class="collapsible-header"><i class="material-icons">add</i>Third</div>
-                    <div class="collapsible-body"><span>divide topics in simple particles</span></div>
-                </li>
-                <li>
-                    <div class="collapsible-header"><i class="material-icons">add</i>Fourth</div>
-                    <div class="collapsible-body"><span>one step at a time</span></div>
-                </li>
-                <li>
-                    <div class="collapsible-header"><i class="material-icons">add</i>Fifth</div>
-                    <div class="collapsible-body"><span>hit your goals</span></div>
-                </li>
-                <li>
-                    <div class="collapsible-header"><i class="material-icons">add</i>Sixth</div>
-                    <div class="collapsible-body"><span>the more trouble it it. the more it'll be worth it.</span>
-
-                    </div>
-
-                </li>
-            </ul>
-            <div class="col s12 white">
-                <div class="row">
-                    <div class="input-field col s6">
-                        <i class="material-icons prefix">textsms</i>
-                        <input type="text" id="autocomplete-input" class="autocomplete">
-                        <label for="autocomplete-input">Autocomplete</label>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </div>
-    <div class="clearfix"></div>
-    <div class="section scrollspy" id="seccion8">
-        <div class="parallax-container">
-            <div class="parallax">
-                <img src="Public/img/13.jpg" alt="">
-            </div>
-        </div>
-    </div>
-    <div class="clearfix"></div>
+<body class="cyan lighten-2" >
+	<div class="container">
+		<h1>English phrases 1.0</h1>
+		<div class="row">
+			<div class="col s12">
+				<div class="row">
+					<div class="input-field col s12">
+						<i class="material-icons prefix">markunread</i>
+						<input type="text" id="autocomplete-input" class="autocomplete">
+						<label for="autocomplete-input">English training</label>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 </body>
 
 </html>
